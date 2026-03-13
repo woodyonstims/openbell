@@ -46,6 +46,11 @@ export function searchStocks(query) {
   return finnhubFetch(`/search?q=${query}`)
 }
 
+// Get US market open/closed status
+export function getMarketStatus() {
+  return finnhubFetch(`/stock/market-status?exchange=US`)
+}
+
 // Get upcoming earnings dates
 export function getEarningsCalendar() {
   const from = new Date().toISOString().split('T')[0]
