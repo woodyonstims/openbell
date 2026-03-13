@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* ── OpenBell Design Tokens ── */
+@theme {
+  /* Background layers — deepest to most elevated */
+  --color-base:     #09090f;
+  --color-surface:  #13131a;
+  --color-elevated: #1c1c28;
+
+  /* Brand — purple */
+  --color-primary:        #7c3aed;
+  --color-primary-light:  #a855f7;
+
+  /* Status accents */
+  --color-accent-green:  #4ade80;
+  --color-accent-yellow: #facc15;
+  --color-accent-red:    #f87171;
+  --color-accent-blue:   #60a5fa;
+  --color-accent-purple: #c084fc;
+
+  /* Fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Base resets */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #09090f;
+  color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
